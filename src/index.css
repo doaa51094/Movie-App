@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Dancing+Script:wght@500&family=Montserrat&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@700&family=Xanh+Mono:ital@1&display=swap');
+:root{
+--mainn-font:@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+--main-color:#131722;
+--light-bg:#24baef;
+--font-color:#fff;
+--border-color:#a8a8a83d;
 }
+body{
+  font-family: var(--mainn-font);
+  background-color: var(--main-color);
+  color: var(--font-color);
+}
+a{
+  color: var(--font-color);
+  text-decoration: none;
+}
+.borderColor{
+  border: 1px solid #a8a8a83d;
+  background-color: transparent;
+  color: var(--font-color);
+}
+.brdr{
+  height: 1px;
+  background-color:var(--border-color);
+}
+.rate{
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  padding:10px;
+  background-color: var(--light-bg);
+  color: var(--font-color);
+}
+.item3 a:hover{
+  color:var(--light-bg);
+}
+.movie{
+  transition: all 0.3s;
+}
+.movie:hover{
+  box-shadow: 0 0 20px var(--light-bg);
+}
+.noxe{
+  color: var(--light-bg);
+}
+.userName{
+  font-family: 'Dancing Script', cursive;
+  color:var(--light-bg);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.page-link{
+  cursor: pointer;
+}
+#homeHeader{
+  background-image: url(./img/bg.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  
+}
+#homeHeader .slider_item {
+width: 150px !important; 
 }
