@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function HomeHeader() {
   const [trendingMovies,setTrendingMovies]=useState([])
  async function getTrendingMovies(){
-let {data}= await axios.get(`http://api.themoviedb.org/3/trending/movie/week?api_key=f1aca93e54807386df3f6972a5c33b50`)
+let {data}= await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=bdd10d2b8f52bc0a5320d5c9d88bd1ff`)
 setTrendingMovies(data.results);
 
   }

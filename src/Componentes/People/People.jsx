@@ -7,7 +7,7 @@ export default function People() {
   let pageList=new Array(10).fill('').map((i,ele)=> ele+1)
   const [trendingPerson,setTrendingPerson]=useState([])
  async function getTrending(pageNumber){
-  let {data}= await axios.get(`http://api.themoviedb.org/3/trending/person/week?api_key=f1aca93e54807386df3f6972a5c33b50&page=${pageNumber}`)
+  let {data}= await axios.get(`https://api.themoviedb.org/3/trending/person/day?api_key=bdd10d2b8f52bc0a5320d5c9d88bd1ff&page=${pageNumber}`)
   setTrendingPerson(data.results);
   
     }
