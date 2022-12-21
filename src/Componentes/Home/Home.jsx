@@ -10,7 +10,7 @@ const [trendingPerson,setTrendingPerson]=useState([])
 
 
  async function getTrending(mediaType ,fun){
-let {data}= await axios.get(`http://api.themoviedb.org/3/trending/${mediaType}/week?api_key=f1aca93e54807386df3f6972a5c33b50`)
+let {data}= await axios.get(`https://api.themoviedb.org/3/trending/${mediaType}/day?api_key=bdd10d2b8f52bc0a5320d5c9d88bd1ff`)
 fun(data.results);
 
   }
